@@ -1,0 +1,18 @@
+
+angular.module('myApp.servers', [])
+.service('UserRegistrationSrvc', function ($http,$rootScope) {
+  return {
+	 /* save: function (userRegistration) {
+        	alert("bye");
+            return $http.get('json.json').then(function (response) {
+                return response.data;
+            }, function (err) {
+                alert(err.status);
+            });
+        }*/
+      
+         }
+          
+          
+  });
+

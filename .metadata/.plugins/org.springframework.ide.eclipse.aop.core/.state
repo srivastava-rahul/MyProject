@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="pc-entities"/>
+<aop-project name="pc-demo"/>
+<aop-project name="pc-demo-admin"/>
+</aop-reference-model>

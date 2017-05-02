@@ -1,0 +1,28 @@
+@viewport {zoom:1;max-zoom:2;min-zoom:1;width:extend-to-zoom}
+@-o-viewport {zoom:1;max-zoom:2;min-zoom:1;width:extend-to-zoom}
+@-ms-viewport {zoom:1;max-zoom:2;min-zoom:1;width:extend-to-zoom}
+@-moz-viewport {zoom:1;max-zoom:2;min-zoom:1;width:extend-to-zoom}
+@-webkit-viewport {zoom:1;max-zoom:2;min-zoom:1;width:extend-to-zoom}
+
+html, body {width:100%;height:100%;margin:0}
+@media (max-width:1369px) {
+        .navbar, .info-container, .body-container{width:100%; margin:0 auto}
+}
+
+@media (max-width:780px) {
+.hpelogo-top, .hpelogo-top img{right:160px;}
+}
+@media (max-width:769px) {
+        .logo{width:50%;background:none;text-align:left}
+        .logo h1{padding-bottom:10px}
+        #navbar-collapse-menu{padding:0px}
+        #navbar-collapse-menu .logo{display:none}
+        .navbar-default .container .logo{display:block}
+        .navbar-nav li{height:60px}
+        .navbar-nav li a br{display:none}
+        .navbar-nav li a, .navbar-nav li, .navbar-default .navbar-nav > li:first-child > a, .navbar-default .navbar-nav > li:last-child > a{width:100% !important}
+        .navbar-nav li a h2, .navbar-nav li a .nav-icon{top:18px !important}
+        .navbar-nav li{border-right:0px; border-bottom:1px solid #EEE}
+}
+
+

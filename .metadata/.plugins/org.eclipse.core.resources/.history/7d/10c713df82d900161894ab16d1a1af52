@@ -1,0 +1,33 @@
+function getService() {
+
+	return "http://localhost:8080/";
+}
+angular.module('myApp.servers', [])
+.service('UserRegistrationSrvc', function ($http,$rootScope) {
+  return {
+	 /* save: function (userRegistration) {
+        	alert("bye");
+            return $http.get('json.json').then(function (response) {
+                return response.data;
+            }, function (err) {
+                alert(err.status);
+            });
+        }*/
+	  
+	  
+	  saveStepType: function (userRegistration) {
+          $rootScope.loader = true;
+          return $http.post(getService() + "registration/steptype/add?name="+step.name+"&description=" + step.description).then(function (resp) {
+              $rootScope.loader = false;
+              return resp.data;
+          }, function (err) {
+              $rootScope.loader = false;
+              alert(err);
+          });
+      },
+      
+         }
+          
+          
+  });
+

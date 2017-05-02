@@ -1,0 +1,206 @@
+package com.pc.app.service.registration;
+
+import java.io.File;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.pc.app.model.registration.UserInformation;
+import com.pc.app.service.profile.ProfileSettingRepository;
+
+@Service
+public class UserRegistrationServiceImpl implements UserRegistrationService {
+    
+	@Autowired
+	UserInformationRepository  userrepo;
+	
+	@Autowired
+	ProfileSettingRepository  profilerepo;
+	
+	/*same class object is created to call create folder method in which we put pics of related user*/
+	//UserRegistrationServiceImpl userregister=new UserRegistrationServiceImpl();
+
+	/**
+	 * Add User
+	 * @param userinfo
+	 * @return Message
+	 */
+	@Override
+	public String adduser(UserInformation userinfo) {
+		//adding user
+		if(userinfo == null ||userinfo.equals("")){
+			return "Invalid-Data";
+		}
+		UserInformation existinguser=userrepo.findOne(userinfo.getEmail_id());
+		if(existinguser!=null){
+			return "User Already Exist";
+		}
+			
+		UserInformation newuseradd=userrepo.save(userinfo);
+		if(newuseradd!=null){
+			/*same class object created to call create folder method*/
+			//String resultofcreatefolder=userregister.createfolderforpic(userinfo.getEmail_id());
+			return "Sucessfully Registered";
+		}else{
+			
+			//error
+			return "Failed to Registered";
+		}
+		
+		
+	}
+
+
+	
+	/**
+	 * Update User
+	 * @param userinfo
+	 * @return Message
+	 */
+	@Override
+	public String updateuser(UserInformation userinfo) {
+		if(userinfo == null ||userinfo.equals("")){
+			return "Invalid-Data";
+		}
+		UserInformation existinguser=userrepo.findOne(userinfo.getEmail_id());
+		if(existinguser!=null){
+			UserInformation userinfoupdate= new UserInformation();
+			if(existinguser.getFirstName() != userinfo.getFirstName()){
+				userinfoupdate.setFirstName(userinfo.getFirstName());
+			}
+			if(existinguser.getLastName() != userinfo.getLastName()){
+				userinfoupdate.setLastName(userinfo.getLastName());
+			}
+			
+			if(existinguser.getGender() != userinfo.getGender()){
+				userinfoupdate.setGender(userinfo.getGender());
+			}
+			if(existinguser.getDob() != userinfo.getDob()){
+				userinfoupdate.setDob(userinfo.getDob());
+			}
+			if(existinguser.getPassword() != userinfo.getPassword()){
+				userinfoupdate.setPassword(userinfo.getPassword());
+			}
+			if(existinguser.getPhone() != userinfo.getPhone()){
+				userinfoupdate.setPhone(userinfo.getPhone());
+			}
+			
+			if(userinfoupdate !=null){
+				userrepo.save(userinfoupdate);
+				return "Sucessfully Updated";
+			}
+			
+		}else{
+			return "No Data is Avaliable to Update";
+			
+		}
+		return "Failed to Update";
+	}
+
+
+	/**
+	 * Delete User
+	 * @param email_id
+	 * @return Message
+	 */
+	@Override
+	public String deleteuser(String email_id) {
+		if(email_id == null ||email_id.equals("")){
+			return "Invalid-Data";
+		}
+		UserInformation idexist=userrepo.findOne(email_id);
+		if(idexist !=null){
+		     profilerepo.delete(email_id);	
+		     userrepo.delete(email_id);
+		 	/*same class object created to call create folder method*/
+		    // String resultofdeletefolder=userregister.deletefolderforpic(email_id);
+		return "Sucessfully Deleted the Account";
+		}
+		return "Email_Id Invalid Or Does Not Exist";
+		
+	}
+
+	
+	/**
+	 * List of User
+	 * @return List of User
+	 */
+	@Override
+	public List<UserInformation> listofuser() {
+		return  userrepo.findAll();
+		
+	}
+
+  //----------------------=====================================================================================--------
+	/**
+	 * Deactivate the Account of User
+	 * @param email_id
+	 * @param status
+	 * @return Message
+	 */
+	@Override
+	public String deactivateuser(String email_id,String status) {
+		if(email_id == null ||email_id.equals("") || status == null ||status.equals("")){
+			return "Invalid-Data";
+		}
+		UserInformation existinguser=userrepo.findOne(email_id);
+		if(existinguser!=null){
+			   userrepo.deactivateuser(email_id,status);	
+			   return "Sucessfully deactivate the Account";
+		}
+		return "Email_Id Does Not Exist";
+	}
+
+
+	/**
+	 * Create Folder of User for photo based on email_id
+	 * @param email
+	 * @return Message
+	 */
+	@Override
+	public String createfolderforpic(String email) {
+		 if(email!=null || email.equals("")){
+        File currentDirectory = new File(new File(".").getAbsolutePath());
+        File pic_folder = new File(currentDirectory.getAbsolutePath() + "\\pic_folder\\" + email);
+        File profile_pic_folder = new File(currentDirectory.getAbsolutePath() + "\\profile_pic_folder\\" + email);
+                 if (!pic_folder.exists() && !profile_pic_folder.exists() ) {
+                	 pic_folder.mkdirs();
+                	 profile_pic_folder.mkdirs();
+        	                           return "Success";
+                                      }
+                 else{
+                	   return "Fail";
+                     }
+             }
+		return "Already Folder Exist with same name";
+		
+	}
+
+
+	/**
+     * Create Folder of User for photo based on email_id
+     * @param email
+	 * @return Message
+	 */
+	@Override
+	public String deletefolderforpic(String email) {
+		if(email!=null || email.equals("")){
+		        File currentDirectory = new File(new File(".").getAbsolutePath());
+		        File pic_folder = new File(currentDirectory.getAbsolutePath() + "\\pic_folder\\" + email);
+		        File profile_pic_folder = new File(currentDirectory.getAbsolutePath() + "\\profile_pic_folder\\" + email);
+		        if (pic_folder.exists() && profile_pic_folder.exists() ) {
+               	                        pic_folder.delete();
+               	                        profile_pic_folder.delete();
+       	                           return "Success";
+                                     }
+		                 else{
+		                	   return "Folder Already deleted";
+		                     }
+		             }
+				return "Folder Does Not Exist";
+	}
+	
+
+
+}

@@ -1,0 +1,69 @@
+@charset utf-8;
+
+@font-face {
+	font-family:'MetricBlack';
+	src:url(../fonts/MetricWeb-Black.eot);
+	src:url(../fonts/MetricWeb-Black.eot?#iefix) format("embedded-opentype"), 
+		url("../fonts/MetricWeb-Black.woff") format("woff"),
+		url("../fonts/MetricWeb-Black.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal
+}
+@font-face {
+	font-family:'MetricRegular';
+	src:url(../fonts/MetricWeb-Regular.eot);
+	src:url(../fonts/MetricWeb-Regular.eot?#iefix) format("embedded-opentype"),
+		url("../fonts/MetricWeb-Regular.woff") format("woff"),
+		url("../fonts/MetricWeb-Regular.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal
+}
+@font-face {
+	font-family:'MetricBold';
+	src:url(../fonts/MetricWeb-Bold.eot);
+	src:url(../fonts/MetricWeb-Bold.eot?#iefix) format("embedded-opentype"),
+		url("../fonts/MetricWeb-Bold.woff") format("woff"),
+		url("../fonts/MetricWeb-Bold.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal
+}
+@font-face {
+	font-family:'MetricMedium';
+	src:url(../fonts/MetricWeb-Medium.eot);
+	src:url(../fonts/MetricWeb-Medium.eot?#iefix) format("embedded-opentype"),
+		url("../fonts/MetricWeb-Medium.woff") format("woff"),
+		url("../fonts/MetricWeb-Medium.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal
+}
+@font-face {
+	font-family:'MetricLight';
+	src:url(../fonts/MetricWeb-Light.eot);
+	src:url(../fonts/MetricWeb-Light.eot?#iefix) format("embedded-opentype"),
+		url("../fonts/MetricWeb-Light.woff") format("woff"),
+		url("../fonts/MetricWeb-Light.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face {
+    font-family: 'MetricThin';
+    src: url("../fonts/MetricWeb-Thin.eot");
+	src: url("../fonts/MetricWeb-Thin.eot?#iefix") format('embedded-opentype'), 
+		 url("../fonts/MetricWeb-Thin.woff ") format("woff"), 
+		 url("../fonts/MetricWeb-Thin.ttf") format("truetype");
+	font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MetricSemibold';
+    src: url("../fonts/MetricWeb-Semibold.eot");
+	src: url("../fonts/MetricWeb-Semibold.eot?#iefix") format('embedded-opentype'), 
+		 url("../fonts/MetricWeb-Semibold.woff ") format("woff"), 
+		 url("../fonts/MetricWeb-Semibold.ttf") format("truetype");
+	font-style: normal;
+    font-weight: normal;
+}
+
+

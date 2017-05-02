@@ -1,0 +1,75 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.6
+4 verbose readDependencies loading dependencies from C:\Training\rahul1\pc-console\package.json
+5 warn package.json NodePlusAngularJS@0.1.0 No repository field.
+6 verbose install where, deps [ 'C:\\Training\\rahul1\\pc-console', [ 'serve-static' ] ]
+7 verbose install where, peers [ 'C:\\Training\\rahul1\\pc-console', [] ]
+8 verbose installManyTop reading for lifecycle C:\Training\rahul1\pc-console\package.json
+9 info preinstall NodePlusAngularJS@0.1.0
+10 verbose installManyTop reading scoped package data from C:\Training\rahul1\pc-console\node_modules\http\package.json
+11 verbose installManyTop reading scoped package data from C:\Training\rahul1\pc-console\node_modules\serve-static\package.json
+12 info package.json http@0.0.0 http is also the name of a node core module.
+13 info package.json http@0.0.0 No description
+14 info package.json http@0.0.0 No repository field.
+15 info package.json http@0.0.0 No README data
+16 verbose readDependencies loading dependencies from C:\Training\rahul1\pc-console\package.json
+17 verbose targetResolver reading package data from C:\Training\rahul1\pc-console\node_modules\http\package.json
+18 verbose targetResolver reading package data from C:\Training\rahul1\pc-console\node_modules\serve-static\package.json
+19 verbose already installed skipping serve-static@~1.7.0 C:\Training\rahul1\pc-console
+20 silly install resolved []
+21 info build C:\Training\rahul1\pc-console
+22 info linkStuff NodePlusAngularJS@0.1.0
+23 silly linkStuff NodePlusAngularJS@0.1.0 has C:\Training\rahul1 as its parent node_modules
+24 verbose linkBins NodePlusAngularJS@0.1.0
+25 verbose linkMans NodePlusAngularJS@0.1.0
+26 verbose rebuildBundles NodePlusAngularJS@0.1.0
+27 verbose rebuildBundles [ 'http', 'serve-static' ]
+28 verbose rebuild bundle C:\Training\rahul1\pc-console\node_modules\http
+29 info build C:\Training\rahul1\pc-console\node_modules\http
+30 info preinstall http@0.0.0
+31 info linkStuff http@0.0.0
+32 silly linkStuff http@0.0.0 has C:\Training\rahul1\pc-console\node_modules as its parent node_modules
+33 verbose linkBins http@0.0.0
+34 verbose linkMans http@0.0.0
+35 verbose rebuildBundles http@0.0.0
+36 info install http@0.0.0
+37 info postinstall http@0.0.0
+38 info install NodePlusAngularJS@0.1.0
+39 info postinstall NodePlusAngularJS@0.1.0
+40 verbose unsafe-perm in lifecycle true
+41 info NodePlusAngularJS@0.1.0 Failed to exec postinstall script
+42 verbose stack Error: NodePlusAngularJS@0.1.0 postinstall: `bower install`
+42 verbose stack Exit status 1
+42 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:217:16)
+42 verbose stack     at emitTwo (events.js:87:13)
+42 verbose stack     at EventEmitter.emit (events.js:172:7)
+42 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+42 verbose stack     at emitTwo (events.js:87:13)
+42 verbose stack     at ChildProcess.emit (events.js:172:7)
+42 verbose stack     at maybeClose (internal/child_process.js:827:16)
+42 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+43 verbose pkgid NodePlusAngularJS@0.1.0
+44 verbose cwd C:\Training\rahul1\pc-console
+45 error Windows_NT 6.1.7601
+46 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+47 error node v4.4.6
+48 error npm  v2.15.5
+49 error code ELIFECYCLE
+50 error NodePlusAngularJS@0.1.0 postinstall: `bower install`
+50 error Exit status 1
+51 error Failed at the NodePlusAngularJS@0.1.0 postinstall script 'bower install'.
+51 error This is most likely a problem with the NodePlusAngularJS package,
+51 error not with npm itself.
+51 error Tell the author that this fails on your system:
+51 error     bower install
+51 error You can get information on how to open an issue for this project with:
+51 error     npm bugs NodePlusAngularJS
+51 error Or if that isn't available, you can get their info via:
+51 error
+51 error     npm owner ls NodePlusAngularJS
+51 error There is likely additional logging output above.
+52 verbose exit [ 1, true ]

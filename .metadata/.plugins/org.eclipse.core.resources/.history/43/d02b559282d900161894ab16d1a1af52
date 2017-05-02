@@ -1,0 +1,30 @@
+function getService() {
+
+    //production
+   //return "https://mrcweb-olopro.glb.itcs.hpecorp.net/recovery-services/";
+    //ITG
+    // return "https://mrcweb-oloitg.glb.itcs.hpecorp.net/recovery-services/";
+    //DEV
+	//return "https://c9t22733.itcs.hpecorp.net/recovery-services/";
+    //Tomcat server for local development
+    //return "http://c9t22090.itcs.hpecorp.net:9080/recovery-services/";
+	//local
+	return "http://localhost:8080/";
+}
+angular.module('myApp.servers', [])
+.service('UserRegistrationSrvc', function ($http,$rootScope) {
+  return {
+	 /* save: function (userRegistration) {
+        	alert("bye");
+            return $http.get('json.json').then(function (response) {
+                return response.data;
+            }, function (err) {
+                alert(err.status);
+            });
+        }*/
+      
+         }
+          
+          
+  });
+

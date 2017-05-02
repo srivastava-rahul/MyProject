@@ -1,0 +1,527 @@
+
+<html ng-app='myApp'>
+<head>
+
+
+<link rel="stylesheet" href="css/css1/bootstrap.min.css">
+<link rel="stylesheet" href="css/css1/bootstrap-toggle.min.css">
+<link rel="stylesheet" href="css/css1/jquery.dataTables.min.css">
+<link rel="stylesheet" href="css/css1/glyphicon.css">
+<link rel="stylesheet" href="css/css1/CustomStyles.css">
+<link rel="stylesheet" href="css/css1/responsive.css">
+<link rel="stylesheet" href="css/css1/angular-bootstrap-toggle.min.css">
+<link rel="stylesheet" href="css/css1/font-awesome.min.css">
+<link rel="stylesheet" href="css/css1/dualmultiselect.css">
+<link rel="stylesheet" href="css/css1/selectize.css">
+<link rel="stylesheet" href="css/css1/jquery.treeview.css">
+<link rel="stylesheet" href="css/css1/jquery.datetimepicker.min.css">
+
+<script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/lib/bootstrap.js"></script>
+<script type="text/javascript" src="js/lib/jquery.dataTables.min.js"></script>
+<script type="text/javascript"
+	src="js/lib/jquery.datetimepicker.full.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.treeview.js"></script>
+<script type="text/javascript" src="js/lib/iconmenu.js"></script>
+
+
+<script src="bower_components/angular/angular.js" type="text/javascript"></script>
+<script
+	src="bower_components/angular-ui-router/release/angular-ui-router.js"
+	type="text/javascript"></script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-cookies.js"></script>
+<script src="bower_components/angular-base64/angular-base64.js"></script>
+<script type="text/javascript" src="js/lib/angular-idle.js"></script>
+<script src="js/lib/angular-datatables.min.js"></script>
+<script type="text/javascript" src="js/lib/bootstrap-toggle.min.js"></script>
+<script src="js/lib/angular-bootstrap-duallistbox.min.js"></script>
+<script type="text/javascript"
+	src="js/lib/angular-bootstrap-toggle.min.js"></script>
+<script src="js/lib/toggle-checkbox.js"></script>
+<script src="js/lib/ng-selectize.min.js"></script>
+<script src="js/lib/abn_tree_directive.js"></script>
+<script src="js/lib/dualmultiselect.js"></script>
+
+<script src="js/controller.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+<script src="js/service.js" type="text/javascript"></script>
+
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/index.css">
+
+
+<script type="text/javascript">
+<!--------------------------Code to Validate  Login Form---------------------------------->
+function verify1(){
+    var user = document.getElementById("user");
+    var pass = document.getElementById("pass");
+    var msg = "";
+if(user.value == ""){
+                msg+= "Please enter a username  \n";    
+                user.className = "inpBoxError";
+               }
+if(pass.value == ""){
+                msg+=" Please enter a password  \n ";    
+                pass.className = "inpBoxError";
+               }
+             if(msg == ""){
+                             return true;
+                          }
+         
+    }
+    
+
+
+<!------------------------------Code for Login popup-------------------------------------------->      
+       
+
+
+         
+ <!------------------------------Code for Comment--------------------------------------------->
+        
+   
+</script>
+
+</head>
+
+<body ng-controller="UserRegistration">
+	<div class="layout1container">
+		<div id="header">
+
+			<!-----------------Code For Login Form------------------------------>
+
+			<a data-toggle="modal" data-target="#SignUpForm"
+				class="btnActions btnGreen" style="float: right; margin-top: 1%"
+				ng-click="openSignUpForm(Signupform)"><p>
+					<span>SignUp</span>
+				</p>
+				<p>
+					<span>SignUp</span>
+				</p></a> <img style="float: right; margin-top: 1%; margin-right: 2%"
+				src="images\SiteRelatedPics\animatedArrow.gif" width="6%"
+				height="45%" />
+			<h1>
+				<p
+					style="margin-top: 1%; float: right;; margin-right: 0.1%; font-family: Jokerman; color: red; background: white;">Hurry</p>
+			</h1>
+			<b
+				style="float: right; margin-left: 88%; table-layout: fixed; color: red; background-color: white; margin-top: 1.2%">Please
+				Enable PopUp!!!!</b>
+
+		</div>
+
+
+		<!-----------------------------------------------------------------------------Code For Menu---------------------------------------->
+		<div id="menu">
+			<h2>
+				<b style="margin-left: 40%; color: blue; margin-top: 1%">{{message}}</b>
+			</h2>
+		</div>
+
+		<!-------------------------------------------------------------------------------------Code For Search Box---------------------------------->
+		<div id="L1content1">
+			<div id="L1content1A"></div>
+		</div>
+		<!-------------------------------------------------------------------------------------Code For Arrow Button-------------------------------->
+		<div>
+			<div>
+				<button class="buttonRule" ng-click="setvisiblity()">{{buttonvalue}}</button>
+				<div ng-show="flage"
+					style="width: 98%; height: auto; background-color: pink">
+
+					<h1 style="text-align: center;">
+						# My PhonenixMoment</font>
+					</h1>
+					<hr>
+					<h2>
+						<center>click photo >>> Upload>>> Get votes >>> Win</center>
+
+
+
+						<font color="white"> How to participate:</font><br />
+
+					</h2>
+
+					<p>
+					<h4>1.click your photo at phoenix MarketCity,Bangalore</h4>
+					<h4>2.Upload the photo and fill in the form to the right</h4>
+					</p>
+
+					<h2>
+						<font color="white">How to win:</font><br />
+					</h2>
+
+					<p>
+					<h4>1. The photo with the most votes..win</h4>
+					</p>
+
+					<h2>
+						<font color="white">Prizes*:</font><br />
+					</h2>
+
+					<h4>
+						<div ng-repeat="rules in ruleslslist">
+							<div ng-repeat="prizes in rules.prize">{{prizes}}</div>
+						</div>
+
+					</h4>
+
+					<h2>
+						<font color="white">*Terms and condition:</font><br />
+					</h2>
+
+					<h4>
+						<div ng-repeat="rules in ruleslslist">
+							<div ng-repeat="terms in rules.termsAndCondition">
+								{{terms}}</div>
+						</div>
+
+					</h4>
+
+					<button class="buttonRule" ng-click="setvisiblity()">{{buttonvalue}}</button>
+				</div>
+
+			</div>
+
+			<!-- ------------------------------------------------------------------------------------>
+			<div align="right" style="margin-right: 12px;">
+				<a href=""><img style="margin-top: 2px"
+					src="images\arrow-left.png" width="5%" height="5%" /></a> <a href="">
+					<img style="margin-top: 2px" src="images\arrow-right.png"
+					width="5%" height="5%" />
+				</a>
+			</div>
+		</div>
+		<!-----------------------------------Code For Pic Section-------------------------------->
+
+		<div id="L1content2">
+			<div id="L1content2A">
+
+				<table>
+					<tr>
+						<img style="margin: 1%;" src="images\10.jpg" width="340"
+							height="400" " onclick="openModal();currentSlide(1)"
+							class="hover-shadow cursor" />
+					</tr>
+					<tr>
+						<input type="button" class="button" value="vote" />
+					</tr>
+				</table>
+
+			</div>
+
+			<div id="L1content2A">
+				<table>
+					<tr>
+						<img style="margin: 1%;" src="images\2.jpg" width="340"
+							height="400" "/>
+					</tr>
+					<tr>
+						<input type="button" class="button" value="vote" />
+					</tr>
+				</table>
+
+
+				<div class="profile">
+					<button class="profile__avatar" id="toggleProfile"
+						ng-click="setvisiblity1()">
+						<img src="images\3.jpg" alt="Avatar" />
+					</button>
+
+					<div class="panel" ng-show="flage1">
+						<h2>
+							<font color="red ">Rahul</font>
+						</h2>
+						<b><font color="green">_________Best Moment_________</font></b><br />
+						<br /> hello by name is rahul who are u dear looking nice what is
+						ur name..../...
+					</div>
+
+
+				</div>
+			</div>
+			<div id="L1content2A">
+				<table>
+					<tr>
+						<img style="margin: 1%;" src="images\6.jpg" width="340"
+							height="400" "/>
+					</tr>
+					<tr>
+						<input type="button" class="button" value="vote" />
+					</tr>
+				</table>
+			</div>
+			<!-- -------------pics popup---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<img src="images\10.jpg" style="width: 100%; height: auto">
+						<center>
+							<input type="button" class="button" value="vote" />
+						</center>
+					</div>
+
+					<div class="mySlides">
+						<img src="images\2.jpg" style="width: 100%; height: auto">
+						<center>
+							<input type="button" class="button" value="vote" />
+						</center>
+					</div>
+
+					<div class="mySlides">
+						<img src="images\6.jpg" style="width: 100%; height: auto">
+						<center>
+							<input type="button" class="button" value="vote" />
+						</center>
+					</div>
+
+
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a
+						class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+
+				</div>
+			</div>
+
+			<!-----------------------------------Code For SignUp Form------------------------------->
+			<div id="L1content3" ng-init="switchbutton=false">
+				<font style="float: left; margin-left: 5px">
+					<h1>
+						<b>Login</b>
+					</h1>
+
+				</font> <br />
+				<br />
+				<br />
+				<br />_______________________________________________
+
+				<!--------------_____________________________________----------Code For Login Form Start Here--------___________________________________________________--------------->
+				<form name="loginform" novalidate>
+					<div class="status-error" ng-if="errorMessage">{{errorMessage}}</div>
+					<div class="form-group">
+
+						Email:<br/>
+						<div class="col-sm-10">
+							<input type="text" id="namebox" class="inpBox" name="loginemail"ng-model="userlogin.loginemail" placeholder="Email"required="" />
+							<div style="color: red" ng-show="loginform.$submitted ||loginform.loginemail.$touched">
+								<span ng-show="loginform.loginemail.$error.required">Please Enter Email</span>
+							</div>
+						</div>
+						
+						<label class="control-label col-sm-2">Password:</label>
+						<div class="col-sm-10">
+							<input type="text" id="namebox" class="inpBox" name="loginpassword"ng-model="userlogin.loginpassword" placeholder="Password"required="" />
+							<div style="color: red" ng-show="loginform.$submitted ||loginform.loginpassword.$touched">
+								<span ng-show="loginform.loginpassword.$error.required">Please Enter Password</span>
+							</div>
+						</div>
+                   </div>
+                     <br/><br/><br/>
+					<div class="modal-footer">
+				       <button type="submit" class="btn btn-primary"ng-click="loginform.$valid && loginuser(userlogin)">Submit</button>
+					</div>
+				</form>
+				
+				<br/>
+				<!-- 	<form class="form" name="loginform" id="loginform">
+
+					<label class="textdata"><b>Email: </b></label> <input type="text"
+						placeholder="Username/Email" class="inpBox" name="useremail"
+						id="namebox" required /> </br>
+					<div style="color: red" ng-show="loginform.$submitted">
+						<div ng-show="loginform.useremail.$error.required">Please
+							enter Email.</div>
+					</div>
+
+					<label class="textdata"><b>Password: </b></label> <input
+						type="text" placeholder="Username/Email" class="inpBox"
+						name="userpassword" id="namebox" required /> </br>
+					<div style="color: red" ng-show="loginform.$submitted">
+						<div ng-show="loginform.userpassword.$error.required">Please
+							enter Email.</div>
+					</div>
+
+					<label >Email:</label> 
+                        <input type=" text"  name="useremail" id="loginemailtextbox" class="loginemailtextbox" placeholder="Username/Email"/> <br/>
+                        <div style="color:red" ng-show="loginform.$submitted">
+                        <div ng-show="loginform.useremail.$error.required">Please enter Password.</div>
+                        </div>
+                      
+                        <label >Password:</label> 
+                        <input type=" text"  name="userpassword" id="loginpasswordtextbox" class="loginpasswordtextbox" placeholder="Password"/><br/> 
+                        <div style="color:red" ng-show="loginform.$submitted">
+                        <div ng-show="loginform.userpassword.$error.required">Please enter Password.</div>
+                        </div>
+
+
+					<input type="checkbox" />Stay signed in <br /> &nbsp; &nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">Forgot password?</a><br />
+					<button type="submit" class="button2"
+						ng-click="loginform.$valid && saveuser(userRegistration)">Sign
+						up</button>
+				</form> -->
+
+
+
+				<br /><br />
+				<hr />
+				<font style="float: right; margin-right: 22%; margin-top: 13%">
+					<p id="demo" class="clockstyle"></p> <!-- <div ng-include="'timer.html'"/> -->
+				</font>
+			</div>
+		</div>
+
+		<!-----------------------------------Code For Footer------------------------------------>
+		<div id="L1content4">Footer</div>
+
+		<!--------------------------------------Below Footer part------------------------------->
+		<div id="L1content5"></div>
+	</div>
+
+
+
+
+
+</body>
+</html>
+
+<!--_________________________________________________________________Modal - Sign Up form________________________________________________-------------------->
+<div class="modal fade" id="SignUpForm" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					ng-click="close(Signupform)" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">Sign-Up</h4>
+			</div>
+			<form name="Signupform" novalidate>
+				<div class="modal-body selectizeModelBody">
+					<div class="form-horizontal">
+
+						<div class="status-error" ng-if="errorMessage">
+							<div class="icon">
+								<i class="glyphicon glyphicon-plus"></i>
+							</div>
+							{{errorMessage}}
+						</div>
+
+						<div class="form-group">
+							<label class="control-label col-sm-2">First Name:</label>
+							<div class="col-sm-10">
+								<input type="text" id="namebox" class="inpBox" name="firstname"
+									ng-model="userRegistration.firstName" placeholder="Name"
+									required="" />example [Ram..etc]
+								<div style="color: red"
+									ng-show="Signupform.$submitted || Signupform.firstname.$touched">
+									<span ng-show="Signupform.firstname.$error.required">Please
+										Enter First Name</span>
+								</div>
+							</div>
+
+							<label class="control-label col-sm-2">Surname:</label>
+							<div class="col-sm-10">
+								<input type="text" id="namebox" class="inpBox" name="lastName"
+									ng-model="userRegistration.lastName" placeholder="Surname"
+									required="" />example [Agarwal,Sihna..etc]
+								<div style="color: red"
+									ng-show="Signupform.$submitted || Signupform.lastName.$touched">
+									<span ng-show="Signupform.lastName.$error.required">Please
+										Enter Surname</span>
+								</div>
+							</div>
+
+							<label class="control-label col-sm-2">Phone:</label>
+							<div class="col-sm-10">
+								<input type="text" id="namebox" class="inpBox" name="phone"
+									ng-model="userRegistration.phone" placeholder="Phone"
+									required="" />+91...[more than 10 digits]
+								<div style="color: red"
+									ng-show="Signupform.$submitted || Signupform.phone.$touched">
+									<span ng-show="Signupform.phone.$error.required">Please
+										Enter Phone</span>
+								</div>
+							</div>
+
+							<label class="control-label col-sm-2">Email:</label>
+							<div class="col-sm-10">
+								<input type="text" id="namebox" class="inpBox" name="email_id"
+									ng-model="userRegistration.email_id" placeholder="Email"
+									required="" />example [abc@gmail.com]
+								<div style="color: red"
+									ng-show="Signupform.$submitted || Signupform.email_id.$touched">
+									<span ng-show="Signupform.email_id.$error.required">Please
+										Enter Email-Id</span>
+								</div>
+							</div>
+
+							<label class="control-label col-sm-2">Password:</label>
+							<div class="col-sm-10">
+								<input type="password" id="namebox" class="inpBox"
+									name="password" ng-model="userRegistration.password"
+									placeholder="password" required="" />Use at least 8 characters
+								<div style="color: red"
+									ng-show="Signupform.$submitted || Signupform.password.$touched">
+									<span ng-show="Signupform.password.$error.required">Please
+										Enter Password</span>
+								</div>
+							</div>
+
+							<label class="control-label col-sm-2">Date-of-Birth:</label>
+							<div class="col-sm-10">
+								<input type="text" id="namebox" class="inpBox" name="dob"
+									ng-model="userRegistration.dob" placeholder="yyyy-mm-dd"
+									required="" />yyyy-mm-dd
+								<div style="color: red"
+									ng-show="Signupform.$submitted || Signupform.dob.$touched">
+									<span ng-show="Signupform.dob.$error.required">Please
+										Enter Date-of-Birth</span>
+								</div>
+							</div>
+
+							<div class="col-sm-10">
+								<label class="control-label col-sm-2"><input
+									type="radio" name="gender" value="male"
+									ng-model="userRegistration.gender"><b>Male</b></label> <label
+									class="control-label col-sm-2"><input type="radio"
+									name="gender" value="Female" ng-model="userRegistration.gender"><b>Female</b></label>
+							</div>
+
+							<div class="col-sm-10">
+								<br /> <input type="checkbox" name="tick" value="correct"
+									ng-model="userRegistration.tick"><b>By clicking
+									Create an account,you agree to our Terms.</b>
+								<div style="color: red"
+									ng-show="Signupform.$submitted || Signupform.tick.$touched">
+									<span ng-show="Signupform.tick.$error.required">Please
+										click checkbox</span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal"
+							ng-click="cancel()">Cancel</button>
+						<button type="submit" class="btn btn-primary"
+							ng-click="Signupform.$valid && saveuser(userRegistration)">Submit</button>
+					</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+

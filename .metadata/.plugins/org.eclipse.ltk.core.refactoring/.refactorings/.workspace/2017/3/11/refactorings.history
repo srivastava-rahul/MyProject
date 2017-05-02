@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;pc-console/public/images/plus.gif&apos;" deleteContents="false" description="Delete resource &apos;pc-console/public/images/plus.gif&apos;" element1="/pc-console/public/images/plus.gif" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1489851496744"/>
+</session>

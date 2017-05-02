@@ -1,0 +1,66 @@
+
+img {
+   max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+ 
+}
+
+.profile--open .profile__form {
+  visibility: visible;
+  
+  opacity: 1;
+  padding-top: 12em;
+}
+
+
+
+.profile--open .profile__avatar {
+ 
+ border-radius: 50%;
+}
+
+
+.profile__avatar {
+  position: absolute;
+  left: 7%;
+ border-radius: 1.25em;
+  overflow: hidden;
+  width: 4.5em;
+  height: 4.5em;
+  display: block;
+ }
+.profile__avatar:focus {
+  outline: 0;
+}
+
+/*--------------------------------------------------------toogle---------------------------------------------------------------------*/
+
+div.panel {
+    width:30%;
+    
+    margin-right:2px;
+    float:right;
+ 
+    display: none;
+    background-color:#00FA9A;
+}
+
+div.panel.show {
+    display: block !important;
+}
+
+
+
+
+
+
+
+
+
+
+

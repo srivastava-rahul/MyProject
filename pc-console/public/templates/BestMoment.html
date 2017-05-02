@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="profile">
+    <button class="profile__avatar" id="toggleProfile">
+    <img src="images\3.jpg" alt="Avatar" /> 
+    </button>
+    <div class="panel" >
+        <h2 style="margin-left:20%"><font  color="red ">Rahul</font></h2>
+        <b><font color="green">_________Best Moment_________</font></b><br/><br/>
+            hello by nameis rahul who are u dear looking nice what is ur name..../...
+     </div>
+ </div>
+      <script src="js/index.js"></script>
+
+    
+           <script>
+
+
+                           var acc = document.getElementsByClassName("profile__avatar");
+                           var i;
+
+                           for (i = 0; i < acc.length; i++) {
+                           acc[i].onclick = function(){
+                           this.classList.toggle("active");
+                           this.nextElementSibling.classList.toggle("show");
+                         }
+                    }
+            </script>
+</body>
+</html>
