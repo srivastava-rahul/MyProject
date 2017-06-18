@@ -16,11 +16,12 @@
 </head>
 <style>
 html { 
-  background: url(${pageContext.request.contextPath}/resources/images/5.jpg); 
+/*   background: url(${pageContext.request.contextPath}/resources/images/5.jpg); */ 
   background-size: cover;
 }
 
 body { 
+  background: url(${pageContext.request.contextPath}/resources/images/5.jpg);
   color: white; 
 }
 </style>
@@ -211,7 +212,7 @@ try  header
 	<script src="${pageContext.request.contextPath}/resources/js/view/video.js"></script>
 	<div  style="margin-top:10%;margin-left:2%;width:20%;background-color:grey">
 	      
-	  <img src="${pageContext.request.contextPath}/resources/images/itg.jpg" alt="Avatar" style="width:304px;height:320px;margin:1px">
+	  <img src="${pageContext.request.contextPath}/resources/images/itg.jpg" alt="Avatar" style="width:313px;height:320px;margin:4px">
 	 
     </div>
 	
