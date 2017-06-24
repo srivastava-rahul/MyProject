@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="<c:url value="/resources/assets/icons/fontawsome-4.7/css/font-awesome.min.css"/>">
 <link rel="stylesheet" type="text/css" href="<c:url value="/resources/assets/themes/admin/slideshow.css"/>">
 <link rel="stylesheet" type="text/css" href="<c:url value="/resources/assets/themes/admin/color-schemes/Kheecho-theme.css"/>">
-<link rel="stylesheet" type="text/css" href="<c:url value="/resources/assets/themes/admin/kheecholayout.css"/>">
+<%-- <link rel="stylesheet" type="text/css" href="<c:url value="/resources/assets/themes/admin/kheecholayout.css"/>"> --%>
 <link rel="stylesheet" type="text/css" href="<c:url value="/resources/assets/bootstrap/css/bootstrap.css"/>">
 <title>Kheecho</title>
 </head>

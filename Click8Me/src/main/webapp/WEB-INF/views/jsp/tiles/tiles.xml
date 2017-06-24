@@ -31,10 +31,27 @@
 		<put-attribute name="title" value="Login" />
 		<put-attribute name="body" value="/WEB-INF/views/jsp/login.jsp" />
 	</definition>
+	
+	<definition name="forgetPassword" extends="blank-definition">
+		<put-attribute name="title" value="Forget password" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/forgetPassword.jsp" />
+	</definition>
 
 	<definition name="dashboard" extends="full-definition">
 		<put-attribute name="title" value="Dashboard" />
 		<put-attribute name="body" value="/WEB-INF/views/jsp/dashboard.jsp" />
+	</definition>
+	
+	<!-- aboutUs  pages -->
+	<definition name="aboutUs" extends="full-definition">
+		<put-attribute name="title" value="About Us" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/aboutus.jsp" />
+	</definition>
+	
+	<!-- Rules pages -->
+	<definition name="rules" extends="full-definition">
+		<put-attribute name="title" value="Rules" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/rules.jsp" />
 	</definition>
 
 

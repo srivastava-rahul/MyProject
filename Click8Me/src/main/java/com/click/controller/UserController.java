@@ -91,6 +91,19 @@ public class UserController {
 		}
 		return "WEB-INF/views/jsp/login";
 	}
+	
+	@RequestMapping(value = "/forgetPassword", method = RequestMethod.POST)
+	public String forgetPassword() {
+		/*try {
+			userService.activateUser(id);
+			System.out.println("user activated successfully");
+		} catch (Exception e) {
+			System.out.println("Error activate user");
+			e.printStackTrace();
+		}*/
+		return "forgetPassword";
+	}
+
 
 	private void sendRegistrationEmail(String[] mailTo, String userName, String id, String message) {
 		String url = APP_URL;
