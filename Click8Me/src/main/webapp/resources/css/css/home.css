@@ -10,7 +10,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #4CAF50;
+    background-color:#bff5ee;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -21,7 +21,7 @@ body {
 	
     padding: 7px 0px 7px 28px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     color: black;
   /*   display: block; */
     transition: 0.3s
@@ -49,9 +49,8 @@ body {
 
 @media screen and (max-height: 400px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 28px;}
 }
-
 
 /*------------------------------------------------------------Yellow color strip  css--------------------------------------------------------------- */
 #dp{
@@ -104,7 +103,7 @@ body {
     padding: 10px;
     width: 150px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
     color: white;
     border-radius: 0 5px 5px 0;
     margin-top: 20%;
@@ -124,38 +123,16 @@ body {
     background-color: #4CAF50;
 }
 
-#Prize {
+#Upload_pic {
     top: 140px;
     background-color: #f44336;
 }
 
-#contactUs{
+#My_own_pic{
     top: 200px;
     background-color: #555
 }
 
-/*-------------------------------------------------Animated Search Box ----------------------------------------------------------------*/
-
-
-/* input[type=text] {
-    width: 120p;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 126px;
-    font-size: 15px;
-    background-color: white;
-    background-image: url('../images/searchicon.png');
-    background-position: 6px 6px; 
-    background-repeat: no-repeat;
-    padding: 3px 14px 4px 36px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    margin-left: 11.7%;
-}
-
-input[type=text]:focus {
-    width: 50%;
-} */
 /*-------------------------------------------------body where pics load ----------------------------------------------------------------*/
 
 
@@ -293,7 +270,7 @@ html {
 
 /*--------------------------------css for Testimonial=--------------------------------------------------------------------------*/
 
-.containertestimonial {
+/* .containertestimonial {
   border: 2px solid black;
   background-color: white;
   border-radius: 5px;
@@ -333,7 +310,7 @@ html {
       float: none;
       display: block;
   }
-}
+} */
 
 /*-------------------Css for feed back form---------------------*/
 
@@ -422,3 +399,19 @@ html {
 
 .submit {background-color: #7f7f7f;} /* Blue */
 .submit:hover {background:#ddd;}
+
+
+/* **********************************************setting page success button ***********************  */
+.btn_setting {
+    width:8%;
+	border-radius:25%;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+	position :relative;
+	margin-left:42%;
+}
+.success {background-color: #4CAF50;} Green
+.success:hover {background-color: #46a049;}

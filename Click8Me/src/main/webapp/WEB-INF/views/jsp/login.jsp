@@ -6,165 +6,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<head>
   <meta charset="UTF-8">
   <title>Sign-Up/Login Form</title>
    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/css/style.css">
   
-</head>
-<style>
-
-/**
- * Tooltip Styles
- */
-
-/* Add this attribute to the element that needs a tooltip */
-[data-tooltip] {
-  position: relative;
-  z-index: 2;
-  cursor: pointer;
-}
-
-/* Hide the tooltip content by default */
-[data-tooltip]:before,
-[data-tooltip]:after {
-  visibility: hidden;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* Position tooltip above the element */
-[data-tooltip]:before {
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-bottom: 5px;
-  margin-left: -80px;
-  padding: 7px;
-  width: 160px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #000;
-  background-color: hsla(0, 0%, 20%, 0.9);
-  color: #fff;
-  content: attr(data-tooltip);
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.2;
-}
-
-/* Triangle hack to make tooltip look like a speech bubble */
-[data-tooltip]:after {
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -5px;
-  width: 0;
-  border-top: 5px solid #000;
-  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  content: " ";
-  font-size: 0;
-  line-height: 0;
-}
-
-/* Show tooltip content on hover */
-[data-tooltip]:hover:before,
-[data-tooltip]:hover:after {
-  visibility: visible;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-
-
-html { 
-/*   background: url(${pageContext.request.contextPath}/resources/images/5.jpg); */ 
-  background-size: cover;
-}
-
-body { 
-  background: url(${pageContext.request.contextPath}/resources/images/5.jpg);
-  color: white; 
-}
+  <style>
+   body { 
+		  background: url(${pageContext.request.contextPath}/resources/images/login_bck.jpg);
+		  color: white; 
+        }
 </style>
-<style>
-.buttonvideo {
-  border-radius: 10px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 8px;
-  width: 120px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.buttonvideo span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.buttonvideo span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.buttonvideo:hover span {
-  padding-right: 25px;
-}
-
-.buttonvideo:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.chip {
-    margin-left:7%;
-    display: inline-block;
-    padding: 0 25px;
-    height: 50px;
-    font-size: 16px;
-    line-height: 50px;
-    border-radius: 25px;
-    background-color: red;
-}
-
-.chip img {
-    float: left;
-    margin: 0 10px 0 -25px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
-
-</style>
-
-
 </head>
 <body>
 
-<div  style="margin-top:2%;width:30%;height:10%;background-color:grey">
-try  header
+<div  style="margin-top:1%; width:30%;height:50% ;background-color:grey">
+     
+     <center><p><span style="font-size:50px;font-family:Parchment;">kheecho Dalo</span></p></center>
+      
 </div>
 <div style="float:right;margin-right:1%">
 <button class="buttonvideo" data-tooltip="Visit Here For Site Tour"><span id ="myBtn">Video </span></button>
+
 </div>
 
  <!-- The Modal -->
@@ -279,7 +143,7 @@ try  header
 	<script src="${pageContext.request.contextPath}/resources/js/view/index.js"></script>
 	
 	<script src="${pageContext.request.contextPath}/resources/js/view/video.js"></script>
-	<div  style="margin-top:10%;margin-left:2%;width:20%;background-color:grey">
+	<div  style="margin-top:10%;margin-left:2%;width:20%;">
 	      
 	  <img src="${pageContext.request.contextPath}/resources/images/itg.jpg" alt="Avatar" style="width:313px;height:320px;margin:4px">
 	 
@@ -289,8 +153,23 @@ try  header
                <img src="${pageContext.request.contextPath}/resources/images/icon-prize.jpg" alt="Person" width="96" height="96">
                  Winner
           </div>
-	<div  style="margin-top:11%;width:100%;height:10%;background-color:grey">
-try footer
+          
+      
+<div  style="margin-top:12%;width:100%;height:auto;background-color:">
+      <div style="margin-bottom: 0px;background-color:#06ccb3;" align="center">&copy; 2018 All rights reserved</div>
+      
+       <div style=";color:black">
+              <table cellspacing="10" cellpadding="10">
+                  <tr>
+				     <td><a href="">Privacy</a></td>
+				     <td><a href="">Terms & Condition</a></td>
+				     <td><a href="">Cookies</a></td>
+				     <td><a href="">Rules</a></td>
+				     <td><a href="">Prize</a></td>
+				     <td><a href="">Contact</a></td>
+				  </tr>
+			 </table>   
+      </div>
 </div>
 	
 </body>

@@ -1,5 +1,5 @@
 openNav=function() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "270px";
   // document.getElementById("main").style.marginRight = "250px";
    // document.getElementById("logoutbutton").style.marginLeft = "250px";
    // document.getElementById("dp").style.display = "none";

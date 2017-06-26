@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping(value = "/user")
-public class AboutUsController {
+public class MyOwnPicController {
 
 	
-	@RequestMapping(value = "/aboutUs")
+	@RequestMapping(value = "/myownpic")
 	protected String getAboutUs(Model model) throws Exception {
 		System.out.println("In user aboutus controller");
-		return "aboutUs";
+		return "myownpic";
 	}
 
 	

@@ -3,9 +3,9 @@
 <%@ page isELIgnored="false"%>
 
 <div class="body-area">
-	<img src="${pageContext.request.contextPath}/resources/images/rules.jpg" alt="Avatar" class="aboutus_pic">
+	<img src="${pageContext.request.contextPath}/resources/images/rules.jpg" alt="Avatar" class="page_pic">
 	<div class="information">
-		<p class="aboutus_information">Rules for participants</p>
+		<p class="header_information">Rules for participants</p>
 	</div>
 		<p>	
 	SEE ALL

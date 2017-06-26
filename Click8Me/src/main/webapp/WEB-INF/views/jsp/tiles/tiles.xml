@@ -54,6 +54,47 @@
 		<put-attribute name="body" value="/WEB-INF/views/jsp/rules.jsp" />
 	</definition>
 
+    <!-- Settings pages -->
+    <definition name="settings" extends="full-definition">
+		<put-attribute name="title" value="Settings" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/settings.jsp" />
+	</definition>
+	
+	<!-- Testimonials pages -->
+    <definition name="testimonials" extends="full-definition">
+		<put-attribute name="title" value="Testimonials" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/testimonials.jsp" />
+	</definition>
+	
+	<!-- ChangePassword pages -->
+    <definition name="changePassword" extends="full-definition">
+		<put-attribute name="title" value="ChangePassword" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/changePassword.jsp" />
+	</definition>
+
+   <!-- Prizes pages -->
+    <definition name="prizes" extends="full-definition">
+		<put-attribute name="title" value="Prizes" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/prizes.jsp" />
+	</definition>
+
+    <!-- Quick Help pages -->
+    <definition name="quickhelp" extends="full-definition">
+		<put-attribute name="title" value="QuickHelp" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/quickhelp.jsp" />
+	</definition>
+	
+	<!-- Profile pages -->
+    <definition name="profile" extends="full-definition">
+		<put-attribute name="title" value="Profile" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/profile.jsp" />
+	</definition>
+	
+	<!-- My-Own-Pic pages -->
+    <definition name="myownpic" extends="full-definition">
+		<put-attribute name="title" value="MyOwnPic" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/myownpic.jsp" />
+	</definition>
 
 	<!-- error pages -->
 	<definition name="400_error" extends="blank-definition">
