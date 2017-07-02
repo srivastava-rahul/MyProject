@@ -14,6 +14,13 @@
 <title>Kheecho</title>
 </head>
 
+<style>
+    body { 
+		  background: url(${pageContext.request.contextPath}/resources/images/login_bck.jpg);
+		  color: white; 
+        }
+</style>
+
 <body style="margin: auto;">
 
 	<!-- <div id="loading" class="opacity-60">

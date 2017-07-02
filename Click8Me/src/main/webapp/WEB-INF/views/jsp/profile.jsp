@@ -48,7 +48,7 @@
 			   <button class="accordion"><b>Advance information</b></button>
 				 
 				 
-				  <div class="panel">
+				  <div class="pannel">
  
                   
 				   <br/><br/>

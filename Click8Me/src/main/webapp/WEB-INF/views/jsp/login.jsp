@@ -172,7 +172,7 @@
 			<a href="">Privacy</a> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
 			<a href="">Terms & Condition</a>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
 			<a href="">Cookies</a>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
-			<a href="">Rules</a>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+			<a href="${pageContext.request.contextPath}/user/rules">Rules</a>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
 			<a href="">Contact</a>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
 			
 	      </div>

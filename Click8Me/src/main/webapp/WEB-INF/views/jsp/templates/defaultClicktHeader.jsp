@@ -62,7 +62,7 @@
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <hr/>
 			  <table>
-			  <tr><td><span>&nbsp; &nbsp;<i class="fa fa-home" style="font-size:28px;color:red"></i><a href="home.html">Home</a></span></td></tr>
+			  <tr><td><span>&nbsp; &nbsp;<i class="fa fa-home" style="font-size:28px;color:red"></i><a href="${pageContext.request.contextPath}/user/dashboard">Home</a></span></td></tr>
 			  <tr><td><span>&nbsp; &nbsp;<i class="fa fa-gear fa-spin" style="font-size:24px;color:red"></i><a href="${pageContext.request.contextPath}/user/getProfileSettings">Settings</a></span></td></tr>
 			   <!-- <tr><td><span>&nbsp; &nbsp;<i class="material-icons" style="font-size:28px;color:red">add_alert</i><a href="#">Notifications</a></span></td></tr> -->
 			   <tr><td><span>&nbsp; &nbsp;<i class="fa fa-diamond" style="font-size:28px;color:red"></i><a href="${pageContext.request.contextPath}/user/rules">Rules</a></span></td></tr>
@@ -116,9 +116,10 @@
 
 
 				<form id="search" method="post" action="${pageContext.request.contextPath}/user/search">
+					<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
 					<div class="col-md-10" style="padding-right: 0px;">
 						<p align="right">
-							<input type="text" name="search" class="fa fa-search searchBox" placeholder="&nbsp; Search Your Loved One....">
+							<input type="text" name="search" class="fa fa-search searchBox" placeholder="&nbsp; Search Your Loved One...." style="color:black;">
 						</p>
 					</div>
 

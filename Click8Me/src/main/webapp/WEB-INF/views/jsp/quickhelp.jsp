@@ -9,7 +9,7 @@
 	                  <div  class="Changepassword_password_form" >
                                                   <!-- header -->
 							<div class="Changepasswordformheader"><center> <b><h1>Quick Help</h1><b></center></div>
-												<hr/>
+												
 						          <form>
 						                    <div class="Changepasswordformboby">
 										        <h2 style="color:red">Please enter Button name or screen which is not working</h2>
@@ -17,7 +17,7 @@
 										    </div>
 										    	
 										    <div class="Changepasswordformboby">
-										        <h2 style="color:blue">Please enter your Problem......!!! </h2>
+										        <h2 style="color:red">Please enter your Problem......!!! </h2>
 										        <div style="margin-left:8%">
 										         <textarea name="quickhelp"  rows="5" cols="78"
 						                           placeholder="Please provide a detailed description of your Problems or suggestions."
@@ -25,7 +25,7 @@
 												</div>
 										    </div>
 										    
-									<hr/>
+									<br/>
 										<!-- footer -->
 										   <div class="Changepasswordformfooter">
 												<button class="Changepassword_button_submit  submit">Send</button>

@@ -196,11 +196,12 @@ button.accordion.active, button.accordion:hover {
     background-color: #ddd; 
 }
 
-div.panel {
+div.pannel {
 	margin-left:20%;
-    padding: 0 18px;
+	padding: 0 18px;
     display: none;
-    background-color: white;
+    color:black;
+    
 }
 
 
