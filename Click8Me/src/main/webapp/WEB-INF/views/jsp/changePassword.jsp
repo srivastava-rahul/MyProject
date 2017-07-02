@@ -1,66 +1,39 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page isELIgnored="false"%>
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-1.4.2.min.js"></script>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+  <meta charset="UTF-8">
+  <title>Change Password</title>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/css/style.css">
+  
+</head>
 
-<div class="body-area">
-	
-	
-	            <div  class="Changepassword_password_form" >
-                                                  <!-- header -->
-									<div class="Changepasswordformheader">  <center> <b><h1>Find Your Account</h1><b></center></div>
-												<hr/>
-						                <form>
-											<div class="Changepasswordformboby">
-										        <h2 style="color:red">Please enter your <i>old Password </i></h2>
-										        <input type="text" class ="Changepassword_form-control"placeholder="Please Enter your old Password"/>
-										    </div>
-										    	
-										    <div class="Changepasswordformboby">
-										        <h2 style="color:blue">Please enter your  new Password </h2>
-										        <input type="text" class ="Changepassword_form-control"placeholder="Please Enter your new Password"/>
-										    </div>
-										    
-										    <div class="Changepasswordformboby">
-										        <h2 style="color:blue">Please re-enter your  new Password </h2>
-										        <input type="text" class ="Changepassword_form-control"placeholder="Please Re-Enter your new Password"/>
-										    </div>
-										    
-										   
-													
-													<hr/>
-													<!-- footer -->
-													<div class="Changepasswordformfooter">
-													<button class="Changepassword_button_submit  submit">Send</button>
-													</div>
-													
-					                       </form>
-					</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-</div>
+<body> 
+                     <div  class="Forgett_password_form" >
+		<div class="forgetformheader" align="center"> <h1>Recover Your Password</h1>
+		</div>
+		<br/>
+		 <form>
+		<%-- <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"> --%>
+			<div class="forgetformboby">
+		    <h2>Please Enter New Password </h2>
+		<input type="text" type="password" id="password" name="password" class ="form-control"placeholder="Please Enter your new Password"/>
+		</div>	
+		<br/><br/>
+		<div class="forgetformfooter" align="right">
+		<button type="submit" class="button_submit  submit">Reset</button>
+			<button class="button_submit  submit" style="width: 98px;margin-right: 12px">Cancel</button>
+		</div>
+		</form>
+    </div>
+
+								
+
+</body>
+
+</html>

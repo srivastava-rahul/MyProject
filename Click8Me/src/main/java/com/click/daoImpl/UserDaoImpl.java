@@ -10,9 +10,6 @@ import com.click.dao.UserDao;
 import com.click.entity.User;
 import com.click.enums.Status;
 
-/**
- * @author parveen
- */
 @Repository
 public class UserDaoImpl implements UserDao {
 
@@ -45,6 +42,18 @@ public class UserDaoImpl implements UserDao {
 		query.setParameter("status", true);
 		query.setParameter("id", id);
 		query.executeUpdate();
+	}
+
+	@Override
+	public User findByEmailId(String email) {
+		Query query = entityManager.createQuery("from User u where upper(u.emailId) = :emailId").setParameter("emailId", email);
+		return (User) query.getSingleResult();
+	}
+
+	@Override
+	public void updateUser(User userDetails) {
+		System.out.println("user dao :" + userDetails.toLogString());
+		entityManager.merge(userDetails);
 	}
 
 }

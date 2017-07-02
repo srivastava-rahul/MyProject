@@ -11,10 +11,6 @@ import com.click.dao.UserDao;
 import com.click.entity.User;
 import com.click.service.UserService;
 
-/**
- * @author parveen
- *
- */
 @Component
 @Transactional(readOnly = true)
 public class UserServiceImpl implements UserService {
@@ -40,4 +36,16 @@ public class UserServiceImpl implements UserService {
 	public void activateUser(String id) {
 		userDao.activateUser(id);
 	}
+
+	@Override
+	public User getUserDeatilsByEmailId(String email) {
+		return userDao.findByEmailId(email);
+	}
+
+	@Override
+	public void updateUserDetails(User userDetails) {
+		userDao.updateUser(userDetails);
+		
+	}
+	
 }

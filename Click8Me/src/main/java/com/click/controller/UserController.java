@@ -92,16 +92,62 @@ public class UserController {
 		return "WEB-INF/views/jsp/login";
 	}
 	
-	@RequestMapping(value = "/forgetPassword", method = RequestMethod.POST)
+	
+	@RequestMapping(value = "/forgetPassword", method = RequestMethod.GET)
 	public String forgetPassword() {
-		/*try {
-			userService.activateUser(id);
-			System.out.println("user activated successfully");
-		} catch (Exception e) {
+		System.out.println(" forgetPassword() ");
+		return "forgetPassword";
+	}
+
+	@RequestMapping(value = "/changePassword/{id}", method = RequestMethod.GET)
+	public String changePassword() {
+		System.out.println(" changePassword() ");
+		return "changePassword";
+	}
+
+	
+	@RequestMapping(value = "/recoverPassword", method = RequestMethod.POST)
+	public String recoverPassword(@RequestParam String email,Model model) {
+		System.out.println(" recoverPassword() " +email);
+		try {
+			User user = userService.getUserDeatilsByEmailId(email);
+			System.out.println(" User FirstName :"+user.getFirstName());
+			sendForgrtPasswordEmail(new String[] { email }, user.getFirstName(), user.getId() ,"Change Password Request");	
+			model.addAttribute("success", "Recovery mail send to your Registered E-mail Id");
+			} 
+		catch (Exception e) {
 			System.out.println("Error activate user");
 			e.printStackTrace();
-		}*/
-		return "forgetPassword";
+		}
+		return "login";
+	}
+	
+	/*@RequestMapping(value = "/newRecoverPassword", method = RequestMethod.POST)
+	public String newRecoverPassword(@RequestParam String password) {
+		System.out.println(" newRecoverPassword() " +password);
+		try {
+			User persistObject = userService.findUserById(id);
+			System.out.println(" User FirstName :"+persistObject.getPassword());
+			persistObject.setPassword(password);
+			
+			//userService
+			} 
+		catch (Exception e) {
+			System.out.println("Error activate user");
+			e.printStackTrace();
+		}
+		return "login";
+	}
+	*/
+	private void sendForgrtPasswordEmail(String[] mailTo, String userName, String id, String message) {
+		String url = APP_URL;
+		String subject = "Forgot Password";
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("userName", userName);
+		map.put("message", message);
+		map.put("loginUrl", url);
+		map.put("appUrl", url + "/changePassword/" + id);
+		sendMailService.sendEmailTemplate(mailTo, subject, map, Global.REGISTRATION_MAIL_TEMPLATE);
 	}
 
 

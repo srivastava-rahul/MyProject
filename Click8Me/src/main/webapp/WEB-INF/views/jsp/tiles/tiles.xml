@@ -36,6 +36,13 @@
 		<put-attribute name="title" value="Forget password" />
 		<put-attribute name="body" value="/WEB-INF/views/jsp/forgetPassword.jsp" />
 	</definition>
+	
+	
+	<!-- ChangePassword pages -->
+    <definition name="changePassword" extends="blank-definition">
+		<put-attribute name="title" value="ChangePassword" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/changePassword.jsp" />
+	</definition>
 
 	<definition name="dashboard" extends="full-definition">
 		<put-attribute name="title" value="Dashboard" />
@@ -67,9 +74,9 @@
 	</definition>
 	
 	<!-- ChangePassword pages -->
-    <definition name="changePassword" extends="full-definition">
+    <definition name="newUserPassword" extends="full-definition">
 		<put-attribute name="title" value="ChangePassword" />
-		<put-attribute name="body" value="/WEB-INF/views/jsp/changePassword.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/newUserPassword.jsp" />
 	</definition>
 	
 	<!-- Contact  Us pages -->
@@ -132,42 +139,4 @@
 		<put-attribute name="body" value="/WEB-INF/views/jsp/500_error.jsp" />
 	</definition>
 
-	<!-- Base Definition <definition name="full-definition" template="/WEB-INF/jsp/layouts/defaultLayout.jsp"> 
-		<put-attribute name="title" value="" /> <put-attribute name="header" value="/WEB-INF/jsp/templates/defaultHeader.jsp" 
-		/> <put-attribute name="menu" value="/WEB-INF/jsp/templates/defaultMenu.jsp" 
-		/> <put-attribute name="body" value="" /> <put-attribute name="footer" value="/WEB-INF/jsp/templates/defaultFooter.jsp" 
-		/> </definition> Simple Layout <definition name="simple-definition" template="/WEB-INF/jsp/layouts/simpleLayout.jsp"> 
-		<put-attribute name="title" value="" /> <put-attribute name="body" value="" 
-		/> </definition> Blank Defination <definition name="blank-definition" template="/WEB-INF/jsp/layouts/blankLayout.jsp"> 
-		<put-attribute name="title" value="" /> <put-attribute name="body" value="" 
-		/> </definition> Base Definition <definition name="header-definition" template="/WEB-INF/jsp/layouts/headerLayout.jsp"> 
-		<put-attribute name="title" value="" /> <put-attribute name="header" value="/WEB-INF/jsp/templates/blankHeader.jsp" 
-		/> <put-attribute name="body" value="" /> <put-attribute name="footer" value="/WEB-INF/jsp/templates/defaultFooter.jsp" 
-		/> </definition> error pages <definition name="400_error" extends="blank-definition"> 
-		<put-attribute name="title" value="Browser refresh not Allowed" /> <put-attribute 
-		name="body" value="/WEB-INF/jsp/400_error.jsp" /> </definition> <definition 
-		name="404_error" extends="blank-definition"> <put-attribute name="title" 
-		value="Not Found" /> <put-attribute name="body" value="/WEB-INF/jsp/404_error.jsp" 
-		/> </definition> <definition name="403_error" extends="blank-definition"> 
-		<put-attribute name="title" value="Not Authorized" /> <put-attribute name="body" 
-		value="/WEB-INF/jsp/403_error.jsp" /> </definition> <definition name="500_error" 
-		extends="blank-definition"> <put-attribute name="title" value="Server Error" 
-		/> <put-attribute name="body" value="/WEB-INF/jsp/500_error.jsp" /> </definition> 
-		Index Page <definition name="index" extends="blank-definition"> <put-attribute 
-		name="title" value="Procurehere" /> <put-attribute name="body" value="/index.jsp" 
-		/> </definition> <definition name="index" extends="simple-definition"> <put-attribute 
-		name="title" value="Login" /> <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" 
-		/> </definition> Login Page <definition name="login" extends="simple-definition"> 
-		<put-attribute name="title" value="Login" /> <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" 
-		/> </definition> <definition name="confirmation" extends="simple-definition"> 
-		<put-attribute name="title" value="Supplier Registration Confirmation" /> 
-		<put-attribute name="body" value="/WEB-INF/views/jsp/supplierregistration/confirmation.jsp" 
-		/> </definition> Dashboards <definition name="dashboard" extends="full-definition"> 
-		<put-attribute name="title" value="Owner Dashboard" /> <put-attribute name="body" 
-		value="/WEB-INF/views/jsp/admin/dashboard.jsp" /> </definition> <definition 
-		name="supplierDashboard" extends="full-definition"> <put-attribute name="title" 
-		value="Supplier Dashboard" /> <put-attribute name="body" value="/WEB-INF/views/jsp/admin/supplierDashboard.jsp" 
-		/> </definition> <definition name="buyerDashboard" extends="full-definition"> 
-		<put-attribute name="title" value="Buyer Dashboard" /> <put-attribute name="body" 
-		value="/WEB-INF/views/jsp/admin/buyerDashboard.jsp" /> </definition> -->
 </tiles-definitions>
