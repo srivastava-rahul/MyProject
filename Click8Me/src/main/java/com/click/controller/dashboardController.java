@@ -39,7 +39,9 @@ public class dashboardController {
 			System.out.println("oldPassword : " + oldPassword + " newPassword : " + oldPassword + " confirmPassword :"
 					+ confirmPassword);
 			User userDetails = userService.findUserById(SecurityLibrary.getLoggedInUser().getId());
+			System.out.println("User Password :"+userDetails.getPassword());
 			if (userDetails.getPassword().trim().equals(oldPassword.trim())) {
+				System.out.println("  Both Equal ");
 			if (!(newPassword.trim().equals(confirmPassword.trim()))) {
 				System.out.println(" Same Password ");
 				model.addAttribute("error", "New password And Confirm Password Must Be Same");
@@ -47,14 +49,16 @@ public class dashboardController {
 			}else{
 				userDetails.setPassword(confirmPassword);
 				userService.updateUserDetails(userDetails);
+				model.addAttribute("success", "Your password has been Changed Successfully .");
+				return "dashboard";
 			}
 			}
-			model.addAttribute("success", "Your password has been Changed Successfully .");
 		} catch (Exception e) {
-			System.out.println("Error activate user");
+			System.out.println("Error Changing user Password");
 			e.printStackTrace();
 		}
-		return "dashboard";
+		model.addAttribute("error", "Your entered Old Password Is Incorrect");
+		return "newUserPassword";
 	}
 
 }

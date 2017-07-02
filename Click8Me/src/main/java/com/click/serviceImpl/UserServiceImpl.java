@@ -17,7 +17,7 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	UserDao userDao;
-	
+
 	@Override
 	public User findUserById(String userId) {
 		System.out.println("user service :" + userId);
@@ -43,9 +43,10 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
+	@Transactional(readOnly = false)
 	public void updateUserDetails(User userDetails) {
 		userDao.updateUser(userDetails);
-		
+
 	}
-	
+
 }
