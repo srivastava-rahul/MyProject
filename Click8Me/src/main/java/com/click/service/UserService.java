@@ -5,9 +5,7 @@ package com.click.service;
 
 import com.click.entity.User;
 
-/**
- * @author parveen
- */
+
 public interface UserService {
 	/**
 	 * @param userId
@@ -25,4 +23,8 @@ public interface UserService {
 	 * @param id
 	 */
 	public void activateUser(String id);
+
+	public User getUserDeatilsByEmailId(String email);
+
+	public void updateUserDetails(User userDetails);
 }

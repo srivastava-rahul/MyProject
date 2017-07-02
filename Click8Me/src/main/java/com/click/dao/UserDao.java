@@ -25,4 +25,8 @@ public interface UserDao {
 	 * @param id
 	 */
 	public void activateUser(String id);
+
+	public User findByEmailId(String email);
+
+	public void updateUser(User userDetails);
 }

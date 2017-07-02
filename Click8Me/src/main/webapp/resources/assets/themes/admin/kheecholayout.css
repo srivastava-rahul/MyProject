@@ -183,6 +183,8 @@ float:right;
   
 }
 .Changepasswordformheader{
+	height: 55px;
+	    padding-top: 1px;
 background-color:#a2f3a2;
 
 }
@@ -210,15 +212,15 @@ background-color:#a2f3a2;
 
 
 
-.submit {background-color: #ff9800;} /* Blue */
+.submit {background-color: #7f7f7f;} /* Blue */
 .submit:hover {background: grey;}
 
 
 .Changepassword_form-control {
     display: block;
-	margin-left:8%;
-    width: 80%;
-    height: 34px;
+	/* margin-left:8%; */
+    width: 97%;
+    height: 50px;
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
