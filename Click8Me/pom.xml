@@ -332,7 +332,7 @@
 			<include>**/*.xls</include> </includes> </testResource> </testResources> -->
 	</build>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>1.7</java.version>
 		<spring.version>4.3.3.RELEASE</spring.version>
 		<hibernate.version>5.1.0.Final</hibernate.version>
 		<spring-security.version>4.1.0.RELEASE</spring-security.version>
@@ -344,7 +344,7 @@
 		<db.driver>com.mysql.jdbc.Driver</db.driver>
 		<db.url>jdbc:mysql://localhost:3306/KHEECHODALO</db.url>
 		<db.username>root</db.username>
-		<db.password>root</db.password>
+		<db.password>1812</db.password>
 		<db.dialect>org.hibernate.dialect.MySQLDialect</db.dialect>
 		<db.connection.timeout>10000</db.connection.timeout>
 		<log.path>${user.home}/logs/</log.path>

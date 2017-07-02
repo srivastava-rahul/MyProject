@@ -71,6 +71,12 @@
 		<put-attribute name="title" value="ChangePassword" />
 		<put-attribute name="body" value="/WEB-INF/views/jsp/changePassword.jsp" />
 	</definition>
+	
+	<!-- Contact  Us pages -->
+    <definition name="contactus" extends="full-definition">
+		<put-attribute name="title" value="ContactUs" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/contactus.jsp" />
+	</definition>
 
    <!-- Prizes pages -->
     <definition name="prizes" extends="full-definition">
@@ -94,6 +100,18 @@
     <definition name="myownpic" extends="full-definition">
 		<put-attribute name="title" value="MyOwnPic" />
 		<put-attribute name="body" value="/WEB-INF/views/jsp/myownpic.jsp" />
+	</definition>
+	
+	 <!-- Winner pages -->
+    <definition name="winner" extends="full-definition">
+		<put-attribute name="title" value="Winner" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/winner.jsp" />
+	</definition>
+	
+	<!-- Search pages -->
+    <definition name="searchpage" extends="full-definition">
+		<put-attribute name="title" value="SearchPage" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/searchpage.jsp" />
 	</definition>
 
 	<!-- error pages -->

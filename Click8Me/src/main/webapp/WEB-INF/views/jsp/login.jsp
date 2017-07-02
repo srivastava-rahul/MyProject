@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/css/style.css">
   
   <style>
-   body { 
+    body { 
 		  background: url(${pageContext.request.contextPath}/resources/images/login_bck.jpg);
 		  color: white; 
         }
@@ -155,11 +155,11 @@
           </div>
           
       
-<div  style="margin-top:12%;width:100%;height:auto;background-color:">
+<div  style="margin-top:10%;width:100%;height:auto;background-color:">
       <div style="margin-bottom: 0px;background-color:#06ccb3;" align="center">&copy; 2018 All rights reserved</div>
-      
-       <div style=";color:black">
-              <table cellspacing="10" cellpadding="10">
+      &nbsp; &nbsp;
+       <div style="color:black">
+              <!-- <table cellspacing="10" cellpadding="10">
                   <tr>
 				     <td><a href="">Privacy</a></td>
 				     <td><a href="">Terms & Condition</a></td>
@@ -168,8 +168,14 @@
 				     <td><a href="">Prize</a></td>
 				     <td><a href="">Contact</a></td>
 				  </tr>
-			 </table>   
-      </div>
+			 </table>    -->
+			<a href="">Privacy</a> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+			<a href="">Terms & Condition</a>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+			<a href="">Cookies</a>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+			<a href="">Rules</a>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+			<a href="">Contact</a>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+			
+	      </div>
 </div>
 	
 </body>

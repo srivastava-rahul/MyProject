@@ -70,7 +70,7 @@
 				   <tr><td>Favourite-Daily-Soap</td></tr>
 				   </table>
 				  	
-					<br/><br/><br/><br/>
+					
 	             
 	
 	             </div>

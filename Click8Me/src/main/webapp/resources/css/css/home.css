@@ -415,3 +415,48 @@ html {
 }
 .success {background-color: #4CAF50;} Green
 .success:hover {background-color: #46a049;}
+
+
+
+/* **********************************************Winner page  ***********************  */
+
+.containerwinner {
+  width:50%;
+  border-radius: 5px;
+  padding: 16px;
+  marging-left:10%;
+  
+  
+}
+
+.containerwinner img {
+    border: 2px solid blue;
+    border-radius: 50%;
+    margin-left:50%;
+	
+	
+}
+.containerwinner span {
+  font-size: 18px;
+  padding:2px;
+  color:white;
+  
+  
+}
+
+@media (max-width: 500px) {
+  .containerwinner {
+      text-align: center;
+  }
+  .containerwinner img {
+      margin: auto;
+      float:none;
+      display: block;
+	  
+  }
+}
+
+.container_img_header{
+background-color:rgba(0, 212, 163, 0.21);
+
+}
